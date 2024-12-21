@@ -3,6 +3,7 @@ import Footer from "../Components/Footer"
 import Hero from "../Components/Hero"
 import Navbar from "../Components/Navbar"
 import Project from "../Components/Project"
+import { projectData } from "../data/projectData"
 import '../styles/main.css'
 
 
@@ -12,7 +13,7 @@ function Home() {
         <Navbar />
         <Hero  />
         <About  />
-        <Project />
+        <Project projectData={projectData} />
         <Footer />
     </div>
   )
